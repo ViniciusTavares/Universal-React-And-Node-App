@@ -2,7 +2,7 @@
 
 A small app to showcase universal rendering and rounting with ReactJS and NodeJS. Just clone, install the packages,
 
-<img src="https://raw.githubusercontent.com/ViniciusTavares/TGA2015UniversalReactAndNodeApp/master/src/static/img/github-cover.png" alt="Http enviroment's message" />
+<img src="https://raw.githubusercontent.com/ViniciusTavares/TGA2015UniversalReactAndNodeApp/master/src/static/img/github-cover.png" alt="Cover image" />
 
 ###Required:
 
