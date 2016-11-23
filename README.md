@@ -1,6 +1,6 @@
 # The Game Awards - Nominess for "Game of the Year" category app!
 
-A small app to showcase universal rendering and rounting with ReactJS and NodeJS. Just clone, install the packages,
+A small app to showcase universal rendering and rounting with ReactJS and NodeJS.  
 
 <img src="https://raw.githubusercontent.com/ViniciusTavares/TGA2015UniversalReactAndNodeApp/master/src/static/img/github-cover.png" alt="Cover image" />
 
@@ -51,7 +51,7 @@ Or, by the second one:
 http-server src/static
 ```
 
-After doing that, you should see some messages as these below:
+After doing that, you should see some messages as these below:  
 <img src="https://raw.githubusercontent.com/ViniciusTavares/TGA2015UniversalReactAndNodeApp/master/src/static/img/github-enviroment.png" alt="Http enviroment's message" />
 
 That's it! I hope you enjoy this project!
