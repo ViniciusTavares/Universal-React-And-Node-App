@@ -1,0 +1,226 @@
+/*! CSS reset from benfrain/app-reset */
+*,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
+*{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}
+[contenteditable],input[type]{user-select:text}body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
+a{text-decoration:none;color:inherit}b{font-weight:400}em,i{font-style:normal}a:focus,input:focus{outline:0}
+fieldset,input{appearance:none;border:0;padding:0;margin:0;min-width:0;font-size:1rem;font-family:inherit}
+input::-ms-clear{display:none}input[type=number]{-moz-appearance:textfield}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none}
+svg{display:inline-flex}img{max-width:100%;display:block}
+
+html {
+  color: #030303;
+  font: caption;
+  padding-bottom: 2em;
+}
+
+a {
+  color: #1f4ba0;
+  text-decoration: underline;
+}
+
+header {
+  padding: 2em;
+}
+
+header .logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+footer {
+  margin: 4em auto;
+  padding: 2em;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+footer p {
+  line-height: 1.2em;
+  margin: 0 0 1em 0;
+}
+
+.not-found {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+.not-found h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.not-found h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.home .games-selector {
+  clear: both;
+  padding: 2em;
+  text-align: center;
+}
+
+.home .games-selector .game-preview {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  max-width: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.home .games-selector .game-preview img {
+  margin: 0;
+  width: 100%;
+}
+
+.home .games-selector .game-preview .common-description {
+  color: #030303;
+  display: inline-block;
+  font-size: 1.6em;
+  overflow: hidden;
+  padding: .2em;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.home .games-selector .game-preview .nominations-count {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  font-weight: bold;
+  margin: .2em;
+  padding: .2em .4em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+}
+
+nav.games-menu {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2em;
+  text-align: center;
+  width: 100%;
+}
+
+nav.games-menu a {
+  font-size: 1.6em;
+  margin: 0 1em 1em 0;
+}
+
+nav.games-menu a.active {
+  color: #030303;
+  text-decoration: none;
+}
+
+.game {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.game header {
+  background: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.game .picture-container {
+  margin: -160px 0 0 0;
+  padding: 0 1em 0 1em;
+}
+
+.game .picture-container .winner-logo {
+  display: inline;
+  margin-left: 10px;
+}
+
+.game .picture-container .game-box {
+  border-radius: 4px;
+  border: 8px solid #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  display: inline;
+  margin: 0 0 0 1em;
+  width: 200px;
+}
+
+.game .picture-container .winner-container {
+  display:inline;
+}
+
+.game .picture-container h2 {
+  display: inline;
+  font-size: 3em;
+  padding: 0 0 0 .5em;
+  width: auto;
+}
+
+.game .flag .icon {
+  display: inline-block;
+  padding-bottom: .1em;
+  width: auto;
+}
+
+.game .description,
+.game .nominations {
+  font-size: 1.6em;
+  padding: 1em;
+}
+
+.game .nominations p {
+  font-size: 1em;
+}
+
+.game .nominations li {
+  list-style: none;
+}
+
+.navigateBack {
+  font-size: 1.6em;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+}
+
+#abar {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#abar a {
+  background: #ffa500;
+  color: #000;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+#abar a:hover {
+  text-decoration: underline;
+}
