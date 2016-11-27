@@ -21,7 +21,7 @@ npm install
 
 It should install both requireds and dev packages. For the next steps I need to warn you that you have two options for using "http-server" and "webpack" modules:
 
-1 - Use "http-server" and "webpack" packages accessing them by their folders (they've already installed);
+1 - Use "http-server" and "webpack" packages accessing them by their folders (they've been already installed);
 2 - Use their versions globally. (I don't recommend this one).
 ```
 npm install -g http-server webpack@1.13.x
@@ -41,7 +41,7 @@ $ NODE_ENV=production webpack -p
 ```
 
 #### Preparing the enviroment!
-Now, the last step! Prepare you http enviroment using the module "http-sever". As mentioned above, whether you prefer the first option:
+Now, the last step! Prepare you http enviroment using the module "http-server". As mentioned above, whether you prefer the first option:
 ```
 node_modules/.bin/http-server src/static
 ```
