@@ -1,4 +1,4 @@
-# The Game Awards - Nominess for "Game of the Year" category app!
+#The Game Awards - Nominess for "Game of the Year" category app!
 
 A small app to showcase universal rendering and rounting with ReactJS and NodeJS.  
 
@@ -12,47 +12,43 @@ A small app to showcase universal rendering and rounting with ReactJS and NodeJS
 If you don't know JSX syntax yet, I really recommend to you take a brief look at official JSX doccumentation (I listed it at final part of this readme).
 Check the end of this file to see a nice tutorial to check how I made this project.
 
-### Lets begin!
+###Lets begin!
 
 After downloaded or cloned the project, open your terminal on the root folder then run:
 ```
 npm install
 ```
 
-It should install both requireds and dev packages. For the next steps I need to warn you that you have two options for using "http-server" and "webpack" modules:
+It should install both requireds and dev packages.
 
-1 - Use "http-server" and "webpack" packages accessing them by their folders (they've been already installed);
-2 - Use their versions globally. (I don't recommend this one).
-```
-npm install -g http-server webpack@1.13.x
-```
+####Preparing the enviroment (choose only one above)
 
-####Generating our app's bundle (optional)
-It's optional because the bundle has already generated and commited, but whether you prefer to either generate it again or generate a development version, follow one of the steps below:
+#####Generating template via NodeJs!
+As we've used JSX syntax we can't use the common node interpreter. It's time to use babel-node to run our server.js script!
+```
+NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015' src/server.js
+```
+If everything is right, you have to see the follow message: "Server running on http://localhost:port [env]"
 
-For the first option:
-```
-$ NODE_ENV=production node_modules/.bin/webpack -p
-```
-
-For the second one (globally):  
-```
-$ NODE_ENV=production webpack -p
-```
-
-#### Preparing the enviroment!
-Now, the last step! Prepare you http enviroment using the module "http-server". As mentioned above, whether you prefer the first option:
+#####Reading only the static files (without a node server)
+I've already installed the http-server module as a dev dependency. To use it run:
 ```
 node_modules/.bin/http-server src/static
 ```
 
-Or, by the second one:
+Or, if you prefer install it by yourself and use it globally:
 ```
 http-server src/static
 ```
 
 After doing that, you should see some messages as these below:  
 <img src="https://raw.githubusercontent.com/ViniciusTavares/TGA2015UniversalReactAndNodeApp/master/src/static/img/github-enviroment.png" alt="Http enviroment's message" />
+
+####Generating our app's bundle (optional)
+It's optional because the bundle has already generated and commited, but whether you prefer to either generate it again or generate a development version, follow the command below:
+```
+$ node_modules/.bin/webpack -d
+```
 
 That's it! I hope you enjoy this project!
 
