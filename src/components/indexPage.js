@@ -1,5 +1,3 @@
-"use require"
-
 import React from 'react';
 import GamePreview from './GamePreview';
 import games from '../data/games';
